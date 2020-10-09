@@ -1,0 +1,44 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "amount": 0,
+      "reason": "credit",
+      "toatlAmount": 0,
+      "debitOrCredit": true,
+      "date": "2020-10-05T12:49:25.153Z"
+    },
+    {
+      "amount": 100,
+      "reason": "received from vidya",
+      "toatlAmount": 100,
+      "debitOrCredit": true,
+      "date": "2020-10-06T09:38:44.763Z",
+      "id": 2
+    },
+    {
+      "amount": 50,
+      "reason": "spent for mobile recharge",
+      "toatlAmount": 50,
+      "debitOrCredit": false,
+      "date": "2020-10-06T09:38:44.763Z",
+      "id": 3
+    },
+    {
+      "amount": 200,
+      "reason": "received from SaiKumar",
+      "toatlAmount": 250,
+      "debitOrCredit": true,
+      "date": "2020-10-06T09:38:44.763Z",
+      "id": 4
+    },
+    {
+      "amount": 100,
+      "reason": "spent for food",
+      "toatlAmount": 150,
+      "debitOrCredit": false,
+      "date": "2020-10-06T09:38:44.763Z",
+      "id": 5
+    }
+  ]
+}

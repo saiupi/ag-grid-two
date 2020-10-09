@@ -1,0 +1,105 @@
+.login-blk{
+    background: linear-gradient(to bottom, #c68efa, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height:80%; 
+    width:100%;
+    padding : 5px 0;
+    
+   }
+  
+   .banner{
+       background:url('../../assets/Banking.jpg')  
+    no-repeat left bottom; background-size:cover;
+     min-height:200px; 
+     border-radius: 0 10px 10px 0; 
+     padding:0;
+     /* width: 900px; */
+    }
+   .container{
+       background:#fff; 
+       border-radius: 11px;
+        box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+   .login{
+       padding: 52px 31px; 
+       position:relative;
+      }
+    h2{margin-bottom:30px;
+       font-weight:802; 
+       font-size:29px; 
+       color: #DE6262;
+      }
+   h2:after{content:" ";
+       width:100px; height:5px;
+        background:#FEB58A;
+         display:block; 
+        margin-top:21px;
+         border-radius:4px; 
+        margin-left:auto;
+        margin-right:auto
+      }
+   .btn-login{
+       background: #DE6262;
+       color:#fff;
+        font-weight:600;
+      }
+      .design {
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: 10px;
+          margin-left: 20px;
+          margin-top: 20px;
+      }
+      
+     .col-sm-4 {
+      padding: 5px;
+  }
+  .all{
+      box-shadow: 0 4px 18px 0 rgba(55, 59, 63, 0.2);
+    transition: 0.3s;
+    border-color: rgb(125, 11, 218);
+  }
+  .spendings{
+    box-shadow: 0 4px 18px 0 rgba(55, 59, 63, 0.2);
+  transition: 0.3s;
+  border-color: rgb(212, 14, 14);
+}
+
+.received{
+  box-shadow: 0 4px 18px 0 rgba(55, 59, 63, 0.2);
+transition: 0.3s;
+border-color: green;
+}
+
+  h5{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(161, 25, 93)
+}
+
+.all:hover{
+    z-index:1111;
+    transform:perspective(2000px) rotate(-1deg);
+    box-shadow:inset 20px 0 50px rgba(81, 11, 212, 0.5);
+  }
+
+  .spendings:hover{
+    z-index:1111;
+    transform:perspective(2000px) rotate(-1deg);
+    box-shadow:inset 20px 0 50px rgba(218, 7, 60, 0.5);
+  }
+  
+.received:hover{
+  z-index:1111;
+  transform:perspective(2000px) rotate(-1deg);
+  box-shadow:inset 20px 0 50px rgba(15, 223, 32, 0.5);
+}
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  .card{
+    border-radius: 55px;
+  }
