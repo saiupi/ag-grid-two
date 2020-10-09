@@ -99,7 +99,35 @@ export class AgGridTwoComponent implements OnInit {
     };
     this.gridOptions.api.exportDataAsCsv(params);
   }
+  su(x) {
+    let df = new FileReader()
+    df.readAsText(x.files[0])
+    df.onload = () => this.rowData = this.gf((df.result as string).split(/\n/))
+  }
+  gf(x) {
+    let final = []
+    for (let i = 1; i < x.length; i++) {
+      let fdata = x[i].split(',')
+      let csvRecord = this.columnDefs;
+      csvRecord.country = fdata[0]
+      csvRecord.athlete = fdata[1]
+      csvRecord.age = fdata[2]
+      csvRecord.country = fdata[3]
+      csvRecord.year = fdata[4]
+      csvRecord.date = fdata[5]
+      csvRecord.sport = fdata[6]
+      csvRecord.gold = fdata[7]
+      csvRecord.silver = fdata[8]
+      csvRecord.total = fdata[9]
+      final.push(csvRecord);
+    }
+    console.log(final, '222');
+
+    return final
+  }
+
 }
+
 
 
 
