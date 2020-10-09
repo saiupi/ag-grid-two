@@ -8,9 +8,6 @@ import { DefulatServiceService } from '../defulat-service.service';
   styleUrls: ['./ag-grid-two.component.css']
 })
 export class AgGridTwoComponent implements OnInit {
-
-
-
   columnDefs: any
   rowData: any
   dummyRowdata: any
@@ -18,7 +15,6 @@ export class AgGridTwoComponent implements OnInit {
   searchedData: any
   searchCount: number = 0
   filterCount: number = 0
-
   gridOptions
   defaultColDef = {
     sortable: true,
@@ -27,15 +23,11 @@ export class AgGridTwoComponent implements OnInit {
     resizable: true,
     // floatingFilter: true,
   };
-
-
   constructor(private service: HttpClient, private customDefined: DefulatServiceService) {
   }
-
   ngOnInit(): void {
     this.getValues()
   }
-
   getValues() {
     let data
     this.service.get('https://raw.githubusercontent.com/ag-grid/ag-grid/master/grid-packages/ag-grid-docs/src/olympicWinners.json').subscribe(res => {
@@ -57,9 +49,7 @@ export class AgGridTwoComponent implements OnInit {
           let mappedColumn = {
             headerName: key.toUpperCase(),
             field: key
-            
           }
-
           columnDefinitions.push(mappedColumn);
         })
     })
@@ -70,12 +60,10 @@ export class AgGridTwoComponent implements OnInit {
     )
     return columnDefinitions;
   }
-
   search(e) {
     console.log(e)
     this.gridOptions.api.setQuickFilter(e)
   }
-
   filter(e) {
     if (this.searchCount == 0) {
       if (e != "") {
@@ -99,7 +87,6 @@ export class AgGridTwoComponent implements OnInit {
       }
     }
   }
-
   onGridReady(event) {
     this.gridOptions = event
   }
@@ -112,8 +99,6 @@ export class AgGridTwoComponent implements OnInit {
     };
     this.gridOptions.api.exportDataAsCsv(params);
   }
-
-
 }
 
 
